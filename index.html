@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Listening is everything - Spotify</title>
+         <!-- Favicon -->
+         <link rel="icon" type="image/x-icon" href="assets/images/favicon.png" />
+         <!-- Main Stylesheet -->
+         <link rel="stylesheet" href="assets/css/style.min.css" />
+         <!-- Fonts Preload-->
+         <link rel="preload" href="assets/fonts/CircularSpotifyText-Black.woff2" as="font" type="font/woff2" crossorigin>
+         <link rel="preload" href="assets/fonts/CircularSpotifyText-Bold.woff2" as="font" type="font/woff2" crossorigin>
+         <link rel="preload" href="assets/fonts/CircularSpotifyText-Book.woff2" as="font" type="font/woff2" crossorigin>
+         <!-- Preload Hero Images-->
+         <link rel="preload" as="image" href="assets/images/bursts.svg">
+         <link rel="preload" as="image" href="assets/images/bursts-mobile.svg">
+         <link rel="preload" as="image" href="assets/images/bursts-tablet.svg">
+    </head>
+<body>
+
+    <!-- Spotify Header-->
+    <section class="spotify-header background-black" id="spotify-header">
+        <div class="container">
+            <div class="inner-wrapper d-flex align-items-center justify-content-between">
+                <!-- Spotify Header Left-->
+                <div class="spotify-header__left">
+                    <!-- Spotify Header Logo-->
+                    <div class="spotify-logo">
+                        <a href="#" class="spotify-logo__link d-block" >
+                            <span class="logo-container d-flex align-items-center justify-content-center">
+                                <svg viewBox="0 0 63 20" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMin meet"><g fill-rule="evenodd"><path d="M61.842 9.506a1.02 1.02 0 0 1-1.023-1.024c0-.562.453-1.03 1.029-1.03a1.02 1.02 0 0 1 1.023 1.024 1.03 1.03 0 0 1-1.029 1.03m.006-1.952a.915.915 0 0 0-.922.928c0 .51.394.921.916.921a.916.916 0 0 0 .922-.927.908.908 0 0 0-.916-.922m.226 1.027l.29.406h-.244l-.26-.372h-.225v.372h-.204V7.912h.48c.249 0 .413.128.413.343 0 .176-.102.284-.25.326m-.172-.485h-.267v.34h.267c.133 0 .212-.065.212-.17 0-.11-.08-.17-.212-.17m-12.804-3.52a1.043 1.043 0 1 0-.001 2.086 1.043 1.043 0 0 0 0-2.087m.72 2.89h-1.454a.107.107 0 0 0-.106.107v6.346c0 .06.047.107.106.107h1.455a.107.107 0 0 0 .107-.107V7.572a.107.107 0 0 0-.107-.107m3.233.006v-.2c0-.592.227-.856.736-.856.303 0 .546.06.82.152a.106.106 0 0 0 .14-.102V5.24a.107.107 0 0 0-.076-.102 3.993 3.993 0 0 0-1.21-.174c-1.343 0-2.053.757-2.053 2.188v.308h-.699a.107.107 0 0 0-.107.106v1.257c0 .059.048.107.107.107h.699v4.99c0 .058.047.106.106.106h1.455a.107.107 0 0 0 .106-.107v-4.99h1.358l2.081 4.99c-.236.523-.468.628-.785.628-.257 0-.527-.077-.803-.228a.109.109 0 0 0-.084-.008.106.106 0 0 0-.063.058l-.493 1.081a.106.106 0 0 0 .045.138c.515.279.98.398 1.554.398 1.074 0 1.668-.5 2.191-1.847L60.6 7.617a.106.106 0 0 0-.099-.146h-1.514a.107.107 0 0 0-.1.072l-1.552 4.431-1.7-4.434a.106.106 0 0 0-.099-.069h-2.485m-5.577-.006h-1.6V5.828a.106.106 0 0 0-.107-.106h-1.455a.107.107 0 0 0-.106.106v1.637h-.7a.106.106 0 0 0-.106.107v1.25c0 .059.048.107.106.107h.7v3.234c0 1.308.65 1.97 1.934 1.97.522 0 .954-.107 1.362-.338a.106.106 0 0 0 .054-.093v-1.19a.106.106 0 0 0-.154-.096c-.28.141-.551.206-.854.206-.467 0-.675-.211-.675-.686V8.929h1.6a.106.106 0 0 0 .107-.107v-1.25a.106.106 0 0 0-.106-.107m-7.671-.133c-1.96 0-3.497 1.51-3.497 3.437 0 1.907 1.526 3.4 3.473 3.4 1.967 0 3.508-1.504 3.508-3.424 0-1.914-1.53-3.413-3.484-3.413m0 5.362c-1.043 0-1.83-.838-1.83-1.95 0-1.115.76-1.924 1.806-1.924 1.05 0 1.84.838 1.84 1.95 0 1.115-.763 1.924-1.816 1.924m-7.014-5.362c-.82 0-1.492.323-2.046.984v-.744a.107.107 0 0 0-.106-.107h-1.455a.107.107 0 0 0-.106.107v8.27c0 .058.048.106.106.106h1.455a.107.107 0 0 0 .106-.106v-2.61c.555.621 1.227.925 2.046.925 1.522 0 3.063-1.172 3.063-3.412s-1.54-3.413-3.063-3.413m1.372 3.413c0 1.14-.703 1.937-1.709 1.937-.995 0-1.745-.833-1.745-1.937s.75-1.937 1.745-1.937c.99 0 1.71.814 1.71 1.937m-8.437-1.81c-1.624-.388-1.913-.66-1.913-1.231 0-.54.508-.903 1.264-.903.732 0 1.459.275 2.22.843a.107.107 0 0 0 .15-.023l.794-1.119a.107.107 0 0 0-.02-.144c-.906-.728-1.927-1.081-3.12-1.081-1.755 0-2.98 1.052-2.98 2.559 0 1.615 1.057 2.187 2.884 2.628 1.554.358 1.817.658 1.817 1.195 0 .594-.53.963-1.385.963-.948 0-1.721-.32-2.587-1.068a.11.11 0 0 0-.078-.026.105.105 0 0 0-.073.038l-.89 1.058a.105.105 0 0 0 .011.148 5.303 5.303 0 0 0 3.581 1.373c1.89 0 3.112-1.033 3.112-2.631 0-1.351-.807-2.098-2.787-2.58M9.507.305a9.41 9.41 0 1 0 0 18.82 9.41 9.41 0 0 0 0-18.82m4.316 13.572a.586.586 0 0 1-.807.195c-2.21-1.35-4.99-1.655-8.266-.907a.586.586 0 1 1-.261-1.143c3.584-.82 6.659-.467 9.139 1.049.276.169.363.53.195.806m1.15-2.562a.734.734 0 0 1-1.008.242c-2.529-1.555-6.385-2.005-9.377-1.097a.735.735 0 0 1-.426-1.404c3.418-1.037 7.666-.534 10.57 1.25a.734.734 0 0 1 .242 1.01m.1-2.669C12.04 6.846 7.036 6.68 4.141 7.56a.88.88 0 1 1-.511-1.684c3.323-1.01 8.849-.814 12.34 1.258a.88.88 0 0 1-.898 1.514"></path></g></svg>
+                            </span>
+                        </a>
+                    </div>
+                    <!-- /Spotify Header Logo-->
+                </div>
+                <!-- /Spotify Header Left-->
+                <!-- Spotify Header Right-->
+                <div class="spotify-header__right slide-in-right d-flex align-items-center justify-content-between">
+                    <ul class="main-nav d-flex align-items-center justify-content-between">
+                        <li class="spotify-header__item">
+                            <a href="#" class="link-white">
+                                Premium
+                            </a>
+                        </li>
+                        <li class="spotify-header__item">
+                            <a href="#" class="link-white">
+                                Support
+                            </a>
+                        </li>
+                        <li class="spotify-header__item">
+                            <a href="#" class="link-white">
+                                Download
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="separator"></div>
+                    <ul class="account-nav d-flex justify-content-between align-items-center">
+                        <li class="spotify-header__item">
+                            <a href="#" class="link-grey">
+                                Sign up
+                            </a>
+                        </li>
+                        <li class="spotify-header__item">
+                            <a href="#" class="link-grey">
+                                Log in
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /Spotify Header Right-->
+                <!-- Mobile Menu Button-->
+                <button class="spotify-mobile__btn">
+                    <span class="spotify-btn__bar"></span>
+                    <span class="spotify-btn__bar"></span>
+                    <span class="spotify-btn__bar"></span>
+                </button>
+                <!-- / Mobile Menu Button-->
+            </div>
+        </div>
+        <!-- Mobile Menu-->
+        <div class="mobile-menu__overlay">
+        </div>
+        <div class="mobile-menu">
+            <div class="mobile-menu__wrapper d-flex flex-column justify-content-between">
+                <div class="mobile-menu-top">
+                    <ul class="mobile-main__menu">
+                        <li class="mobile-menu__item">
+                            <a href="#" class="link-white">Premium</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a href="#" class="link-white">Support</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a href="#" class="link-white">Download</a>
+                        </li>
+                    </ul>
+                    <div class="mobile-separator"></div>
+                    <ul class="mobile-account__nav">
+                        <li class="mobile-menu__item">
+                            <a href="#" class="link-grey">Sign up</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a href="#" class="link-grey">Log in</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mobile-menu__bottom">
+                    <div class="mobile-logo">
+                        <a href="#" class="d-block"><span>
+                              <svg viewBox="0 0 63 20" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMin meet"><g fill-rule="evenodd"><path d="M61.842 9.506a1.02 1.02 0 0 1-1.023-1.024c0-.562.453-1.03 1.029-1.03a1.02 1.02 0 0 1 1.023 1.024 1.03 1.03 0 0 1-1.029 1.03m.006-1.952a.915.915 0 0 0-.922.928c0 .51.394.921.916.921a.916.916 0 0 0 .922-.927.908.908 0 0 0-.916-.922m.226 1.027l.29.406h-.244l-.26-.372h-.225v.372h-.204V7.912h.48c.249 0 .413.128.413.343 0 .176-.102.284-.25.326m-.172-.485h-.267v.34h.267c.133 0 .212-.065.212-.17 0-.11-.08-.17-.212-.17m-12.804-3.52a1.043 1.043 0 1 0-.001 2.086 1.043 1.043 0 0 0 0-2.087m.72 2.89h-1.454a.107.107 0 0 0-.106.107v6.346c0 .06.047.107.106.107h1.455a.107.107 0 0 0 .107-.107V7.572a.107.107 0 0 0-.107-.107m3.233.006v-.2c0-.592.227-.856.736-.856.303 0 .546.06.82.152a.106.106 0 0 0 .14-.102V5.24a.107.107 0 0 0-.076-.102 3.993 3.993 0 0 0-1.21-.174c-1.343 0-2.053.757-2.053 2.188v.308h-.699a.107.107 0 0 0-.107.106v1.257c0 .059.048.107.107.107h.699v4.99c0 .058.047.106.106.106h1.455a.107.107 0 0 0 .106-.107v-4.99h1.358l2.081 4.99c-.236.523-.468.628-.785.628-.257 0-.527-.077-.803-.228a.109.109 0 0 0-.084-.008.106.106 0 0 0-.063.058l-.493 1.081a.106.106 0 0 0 .045.138c.515.279.98.398 1.554.398 1.074 0 1.668-.5 2.191-1.847L60.6 7.617a.106.106 0 0 0-.099-.146h-1.514a.107.107 0 0 0-.1.072l-1.552 4.431-1.7-4.434a.106.106 0 0 0-.099-.069h-2.485m-5.577-.006h-1.6V5.828a.106.106 0 0 0-.107-.106h-1.455a.107.107 0 0 0-.106.106v1.637h-.7a.106.106 0 0 0-.106.107v1.25c0 .059.048.107.106.107h.7v3.234c0 1.308.65 1.97 1.934 1.97.522 0 .954-.107 1.362-.338a.106.106 0 0 0 .054-.093v-1.19a.106.106 0 0 0-.154-.096c-.28.141-.551.206-.854.206-.467 0-.675-.211-.675-.686V8.929h1.6a.106.106 0 0 0 .107-.107v-1.25a.106.106 0 0 0-.106-.107m-7.671-.133c-1.96 0-3.497 1.51-3.497 3.437 0 1.907 1.526 3.4 3.473 3.4 1.967 0 3.508-1.504 3.508-3.424 0-1.914-1.53-3.413-3.484-3.413m0 5.362c-1.043 0-1.83-.838-1.83-1.95 0-1.115.76-1.924 1.806-1.924 1.05 0 1.84.838 1.84 1.95 0 1.115-.763 1.924-1.816 1.924m-7.014-5.362c-.82 0-1.492.323-2.046.984v-.744a.107.107 0 0 0-.106-.107h-1.455a.107.107 0 0 0-.106.107v8.27c0 .058.048.106.106.106h1.455a.107.107 0 0 0 .106-.106v-2.61c.555.621 1.227.925 2.046.925 1.522 0 3.063-1.172 3.063-3.412s-1.54-3.413-3.063-3.413m1.372 3.413c0 1.14-.703 1.937-1.709 1.937-.995 0-1.745-.833-1.745-1.937s.75-1.937 1.745-1.937c.99 0 1.71.814 1.71 1.937m-8.437-1.81c-1.624-.388-1.913-.66-1.913-1.231 0-.54.508-.903 1.264-.903.732 0 1.459.275 2.22.843a.107.107 0 0 0 .15-.023l.794-1.119a.107.107 0 0 0-.02-.144c-.906-.728-1.927-1.081-3.12-1.081-1.755 0-2.98 1.052-2.98 2.559 0 1.615 1.057 2.187 2.884 2.628 1.554.358 1.817.658 1.817 1.195 0 .594-.53.963-1.385.963-.948 0-1.721-.32-2.587-1.068a.11.11 0 0 0-.078-.026.105.105 0 0 0-.073.038l-.89 1.058a.105.105 0 0 0 .011.148 5.303 5.303 0 0 0 3.581 1.373c1.89 0 3.112-1.033 3.112-2.631 0-1.351-.807-2.098-2.787-2.58M9.507.305a9.41 9.41 0 1 0 0 18.82 9.41 9.41 0 0 0 0-18.82m4.316 13.572a.586.586 0 0 1-.807.195c-2.21-1.35-4.99-1.655-8.266-.907a.586.586 0 1 1-.261-1.143c3.584-.82 6.659-.467 9.139 1.049.276.169.363.53.195.806m1.15-2.562a.734.734 0 0 1-1.008.242c-2.529-1.555-6.385-2.005-9.377-1.097a.735.735 0 0 1-.426-1.404c3.418-1.037 7.666-.534 10.57 1.25a.734.734 0 0 1 .242 1.01m.1-2.669C12.04 6.846 7.036 6.68 4.141 7.56a.88.88 0 1 1-.511-1.684c3.323-1.01 8.849-.814 12.34 1.258a.88.88 0 0 1-.898 1.514"></path></g></svg>
+                        </span></a>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+        <!-- /Mobile Menu-->
+    </section>
+    <!-- /Spotify Header-->
+    <!-- Spotify Hero-->
+    <section class="spotify-hero d-flex align-items-center justify-content-center">
+        <div class="spotify-hero__content flex-column align-items-center justify-content-center d-flex">
+            <h1 class="spotify-hero__content--title">
+                Listening is everything
+            </h1>
+            <p class="spotify-hero__content--text">
+                Millions of songs and podcasts. No credit card needed.
+            </p>
+            <a href="#" class="spotify-hero__btn d-inline-block"><span>GET SPOTIFY FREE</span></a>
+        </div>
+    </section>
+    <!-- /Spotify Hero-->
+    <!-- Spotify Footer-->
+    <section class="spotify-footer background-black" id="spotify-footer">
+        <div class="container">
+            <!-- Footer Top-->
+            <div class="footer-top d-flex align-items-start justify-content-between">
+                <!-- Footer Top Left-->
+                <div class="footer-top__left">
+                    <div class="row footer-logo__links">
+                        <div class="col-md-3 spotify-footer__logo">
+                            <a href="#" class="spotify-footer__logo--link d-inline-block">
+                                <svg viewBox="0 0 63 20" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMin meet"><g fill-rule="evenodd"><path d="M61.842 9.506a1.02 1.02 0 0 1-1.023-1.024c0-.562.453-1.03 1.029-1.03a1.02 1.02 0 0 1 1.023 1.024 1.03 1.03 0 0 1-1.029 1.03m.006-1.952a.915.915 0 0 0-.922.928c0 .51.394.921.916.921a.916.916 0 0 0 .922-.927.908.908 0 0 0-.916-.922m.226 1.027l.29.406h-.244l-.26-.372h-.225v.372h-.204V7.912h.48c.249 0 .413.128.413.343 0 .176-.102.284-.25.326m-.172-.485h-.267v.34h.267c.133 0 .212-.065.212-.17 0-.11-.08-.17-.212-.17m-12.804-3.52a1.043 1.043 0 1 0-.001 2.086 1.043 1.043 0 0 0 0-2.087m.72 2.89h-1.454a.107.107 0 0 0-.106.107v6.346c0 .06.047.107.106.107h1.455a.107.107 0 0 0 .107-.107V7.572a.107.107 0 0 0-.107-.107m3.233.006v-.2c0-.592.227-.856.736-.856.303 0 .546.06.82.152a.106.106 0 0 0 .14-.102V5.24a.107.107 0 0 0-.076-.102 3.993 3.993 0 0 0-1.21-.174c-1.343 0-2.053.757-2.053 2.188v.308h-.699a.107.107 0 0 0-.107.106v1.257c0 .059.048.107.107.107h.699v4.99c0 .058.047.106.106.106h1.455a.107.107 0 0 0 .106-.107v-4.99h1.358l2.081 4.99c-.236.523-.468.628-.785.628-.257 0-.527-.077-.803-.228a.109.109 0 0 0-.084-.008.106.106 0 0 0-.063.058l-.493 1.081a.106.106 0 0 0 .045.138c.515.279.98.398 1.554.398 1.074 0 1.668-.5 2.191-1.847L60.6 7.617a.106.106 0 0 0-.099-.146h-1.514a.107.107 0 0 0-.1.072l-1.552 4.431-1.7-4.434a.106.106 0 0 0-.099-.069h-2.485m-5.577-.006h-1.6V5.828a.106.106 0 0 0-.107-.106h-1.455a.107.107 0 0 0-.106.106v1.637h-.7a.106.106 0 0 0-.106.107v1.25c0 .059.048.107.106.107h.7v3.234c0 1.308.65 1.97 1.934 1.97.522 0 .954-.107 1.362-.338a.106.106 0 0 0 .054-.093v-1.19a.106.106 0 0 0-.154-.096c-.28.141-.551.206-.854.206-.467 0-.675-.211-.675-.686V8.929h1.6a.106.106 0 0 0 .107-.107v-1.25a.106.106 0 0 0-.106-.107m-7.671-.133c-1.96 0-3.497 1.51-3.497 3.437 0 1.907 1.526 3.4 3.473 3.4 1.967 0 3.508-1.504 3.508-3.424 0-1.914-1.53-3.413-3.484-3.413m0 5.362c-1.043 0-1.83-.838-1.83-1.95 0-1.115.76-1.924 1.806-1.924 1.05 0 1.84.838 1.84 1.95 0 1.115-.763 1.924-1.816 1.924m-7.014-5.362c-.82 0-1.492.323-2.046.984v-.744a.107.107 0 0 0-.106-.107h-1.455a.107.107 0 0 0-.106.107v8.27c0 .058.048.106.106.106h1.455a.107.107 0 0 0 .106-.106v-2.61c.555.621 1.227.925 2.046.925 1.522 0 3.063-1.172 3.063-3.412s-1.54-3.413-3.063-3.413m1.372 3.413c0 1.14-.703 1.937-1.709 1.937-.995 0-1.745-.833-1.745-1.937s.75-1.937 1.745-1.937c.99 0 1.71.814 1.71 1.937m-8.437-1.81c-1.624-.388-1.913-.66-1.913-1.231 0-.54.508-.903 1.264-.903.732 0 1.459.275 2.22.843a.107.107 0 0 0 .15-.023l.794-1.119a.107.107 0 0 0-.02-.144c-.906-.728-1.927-1.081-3.12-1.081-1.755 0-2.98 1.052-2.98 2.559 0 1.615 1.057 2.187 2.884 2.628 1.554.358 1.817.658 1.817 1.195 0 .594-.53.963-1.385.963-.948 0-1.721-.32-2.587-1.068a.11.11 0 0 0-.078-.026.105.105 0 0 0-.073.038l-.89 1.058a.105.105 0 0 0 .011.148 5.303 5.303 0 0 0 3.581 1.373c1.89 0 3.112-1.033 3.112-2.631 0-1.351-.807-2.098-2.787-2.58M9.507.305a9.41 9.41 0 1 0 0 18.82 9.41 9.41 0 0 0 0-18.82m4.316 13.572a.586.586 0 0 1-.807.195c-2.21-1.35-4.99-1.655-8.266-.907a.586.586 0 1 1-.261-1.143c3.584-.82 6.659-.467 9.139 1.049.276.169.363.53.195.806m1.15-2.562a.734.734 0 0 1-1.008.242c-2.529-1.555-6.385-2.005-9.377-1.097a.735.735 0 0 1-.426-1.404c3.418-1.037 7.666-.534 10.57 1.25a.734.734 0 0 1 .242 1.01m.1-2.669C12.04 6.846 7.036 6.68 4.141 7.56a.88.88 0 1 1-.511-1.684c3.323-1.01 8.849-.814 12.34 1.258a.88.88 0 0 1-.898 1.514"></path></g></svg>
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <ul class="footer-links">
+                                <li class="footer-item heading">COMPANY</li>
+                                <li class="footer-item">
+                                    <a href="#" class="footer-link">
+                                        About
+                                    </a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="#" class="footer-link">
+                                        Jobs
+                                    </a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="#" class="footer-link">
+                                        For the Record
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <ul class="footer-links">
+                                <li class="footer-item heading">COMMUNITIES</li>
+                                <li class="footer-item">
+                                    <a href="#" class="footer-link">
+                                        For Artists
+                                    </a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="#" class="footer-link">
+                                        Developers
+                                    </a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="#" class="footer-link">
+                                        Advertising
+                                    </a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="#" class="footer-link">
+                                        Investors
+                                    </a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="#" class="footer-link">
+                                        Vendors
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <ul class="footer-links">
+                                <li class="footer-item heading">USEFUL LINKS</li>
+                                <li class="footer-item">
+                                    <a href="#" class="footer-link">
+                                        Support
+                                    </a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="#" class="footer-link">
+                                        Web Player
+                                    </a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="#" class="footer-link">
+                                        Free Mobile App
+                                    </a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="#" class="footer-link">
+                                        Car Thing
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Footer Top Left-->
+                <!-- Footer Top Right-->
+                <div class="footer-top__right">
+                    <ul class="spotify-social__icons d-flex align-items-center justify-content-between">
+                        <li class="spotify-social__icon">
+                            <a href="#" class="spotify-social-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"  viewBox="0 0 16 16">
+                                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                                  </svg>
+                            </a>
+                        </li>
+                        <li class="spotify-social__icon">
+                            <a href="#" class="spotify-social-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"  viewBox="0 0 16 16">
+                                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                                  </svg>
+                            </a>
+                        </li>
+                        <li class="spotify-social__icon">
+                            <a href="#" class="spotify-social-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="24" height="24"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /Footer Top Right-->
+            </div>
+            <!-- /Footer Top-->
+            <!-- Footer Bottom-->
+            <div class="footer-bottom d-flex align-items-end justify-content-between">
+                <!-- Footer Bottom Left-->
+                <div class="footer-bottom__left">
+                    <ul class="footer-bottom__links d-flex align-items-center">
+                        <li class="footer-bottom__item">
+                            <a href="#" class="footer-bottom__link link-grey">
+                                Legal
+                            </a>
+                        </li>
+                        <li class="footer-bottom__item">
+                            <a href="#" class="footer-bottom__link link-grey">
+                                Privacy Center
+                            </a>
+                        </li>
+                        <li class="footer-bottom__item">
+                            <a href="#" class="footer-bottom__link link-grey">
+                                Privacy Policy
+                            </a>
+                        </li>
+                        <li class="footer-bottom__item">
+                            <a href="#" class="footer-bottom__link link-grey">
+                                Cookies
+                            </a>
+                        </li>
+                        <li class="footer-bottom__item">
+                            <a href="#" class="footer-bottom__link link-grey">
+                                About Ads
+                            </a>
+                        </li>
+                        <li class="footer-bottom__item">
+                            <a href="#" class="footer-bottom__link link-grey">
+                                Additional CA Privacy Disclosures
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /Footer Bottom Left-->
+                <!-- Footer Bottom Right-->
+                <div class="footer-bottom__right d-flex flex-column align-items-end ">
+                    <a href="#" class="spotify-location d-block">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="12" height="12"><path d="M512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM57.71 192.1L67.07 209.4C75.36 223.9 88.99 234.6 105.1 239.2L162.1 255.7C180.2 260.6 192 276.3 192 294.2V334.1C192 345.1 198.2 355.1 208 359.1C217.8 364.9 224 374.9 224 385.9V424.9C224 440.5 238.9 451.7 253.9 447.4C270.1 442.8 282.5 429.1 286.6 413.7L289.4 402.5C293.6 385.6 304.6 371.1 319.7 362.4L327.8 357.8C342.8 349.3 352 333.4 352 316.1V307.9C352 295.1 346.9 282.9 337.9 273.9L334.1 270.1C325.1 261.1 312.8 255.1 300.1 255.1H256.1C245.9 255.1 234.9 253.1 225.2 247.6L190.7 227.8C186.4 225.4 183.1 221.4 181.6 216.7C178.4 207.1 182.7 196.7 191.7 192.1L197.7 189.2C204.3 185.9 211.9 185.3 218.1 187.7L242.2 195.4C250.3 198.1 259.3 195 264.1 187.9C268.8 180.8 268.3 171.5 262.9 165L249.3 148.8C239.3 136.8 239.4 119.3 249.6 107.5L265.3 89.12C274.1 78.85 275.5 64.16 268.8 52.42L266.4 48.26C262.1 48.09 259.5 48 256 48C163.1 48 84.4 108.9 57.71 192.1L57.71 192.1zM437.6 154.5L412 164.8C396.3 171.1 388.2 188.5 393.5 204.6L410.4 255.3C413.9 265.7 422.4 273.6 433 276.3L462.2 283.5C463.4 274.5 464 265.3 464 256C464 219.2 454.4 184.6 437.6 154.5H437.6z"/></svg>
+                        <span>USA</span>
+                    </a>
+                    <div class="spotify-copyright">
+                         &copy; 2022 Spotify AB
+                    </div>
+                </div>
+                <!-- /Footer Bottom Right-->
+            </div>
+            <!-- /Footer Bottom-->
+        </div>
+    </section>
+    <!-- /Footer-->
+    
+
+<!-- Spotify JS -->
+<script src="assets/js/spotify.js"></script>
+</body>
+</html>
