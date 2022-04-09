@@ -489,7 +489,7 @@
 }
 @media (max-width: 1199.98px) {
   .spotify-hero__content p.spotify-hero__content--text {
-    max-width: 100%;
+    max-width: 90%;
     width: 400px;
   }
 
