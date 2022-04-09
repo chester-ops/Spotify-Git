@@ -487,15 +487,25 @@
   padding-bottom: 30px;
   color: #1ed760;
 }
+@media (max-width: 1199.98px) {
+  .spotify-hero__content p.spotify-hero__content--text {
+    max-width: 100%;
+    width: 400px;
+  }
+
+}
 @media screen and (max-width: 480px) {
   .spotify-hero__content p.spotify-hero__content--text {
     padding-bottom: 20px;
+    width: auto;
   }
 }
 .spotify-hero__content a.spotify-hero__btn {
   background-color: #1ED760;
   color: #2941AB;
   border-radius: 500px;
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
   padding: 17px 32px;
   font-size: 14px;
   line-height: 1;
